@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">  
+    <header>
+      <h3>Simple, traffic-based pricing</h3>
+      <div class="header--text">
+        <p>Sign-up for our 30-day trial.</p>
+        <p>No credit card required. </p>
+    </div>
+    </header>
+    <div class="card">
+      <div class="prices">
+        <div class="page-views"><span>100K</span> PAGEVIEWS</div>
+      </div>
+
+
+
+      <input type="range" min="1" max="5" step="1" value="3" class="styled-slider slider-progress myrange">
+      <!-- <div class="range">
+        
+        <div class="field">
+          <div class="value left">0</div>
+          <input type="range" min="8" max="36" value="100" step="4">
+          <div class="value right">0</div>
+        </div>
+        <div class="sliderValue">
+          <span class="card--range--priceRange">$16</span>
+          / <span>month</span>
+        </div>
+      </div> -->
+
+      <div class="priceValue">
+        <span class="priceValue--currency">$</span><span class="pricevalue" id="priceValue"></span>
+        <span class="priceOption" id="priceOption">/</span>
+      </div>
+
+      
+      
+        <div class="card--billing">
+            <p class="card--monthly--billing">Monthly Billing</p>
+          <label for="changePriceOption"  class="switch">
+            <input type="checkbox" id="changePriceOption">
+            <span class="slider round"></span>
+          </label>
+            <p>Yearly Billing</p>
+          
+            <p class="card--billing--discount">-25%</p>
+        </div>
+
+
+      
+
+      <div class="card--container">
+        <div class="card--container--check">
+          <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg><p>Unlimited websites</p></div>
+        <div class="card--container--check">
+          <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg><p>100% data ownership</p></div>
+        <div class="card--container--check">
+          <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg><p>Email reports</p>
+        </div>
+        <a href="#" class="card--container--btn">Start my trial</a>
+      </div>
+    </div>
+  
+   
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a target="_blank" href="#">Bjørn Ole</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
